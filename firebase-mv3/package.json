@@ -1,0 +1,34 @@
+{
+  "name": "firestore9-manifest-v3-example",
+  "version": "1.0.0",
+  "description": "## If you have trouble accessing Firestore after migrating your extension to v3, this might help you. ## In manifest v3, Firestore does not work in a service worker, so it's recommended to use a module bundler like webpack. ### I provided a sample code to show you how it looks like, but you should edit the files and run the following steps (the dist folder is not present as it is empty before you run `npm run build`).",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noovil/chrome-extension-manifestv3.git"
+  },
+  "keywords": [
+    "webpack",
+    "manifest",
+    "v3",
+    "chrome",
+    "extension"
+  ],
+  "devDependencies": {
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "firebase": "^9.4.1"
+  },
+  "bugs": {
+    "url": "https://github.com/noovil/chrome-extension-manifestv3/issues"
+  },
+  "homepage": "https://github.com/noovil/chrome-extension-manifestv3#readme",
+  "author": "",
+  "license": "ISC"
+}

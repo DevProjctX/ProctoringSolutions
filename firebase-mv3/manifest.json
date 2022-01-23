@@ -1,0 +1,28 @@
+{
+  "name": "MV3-Auth-Test",
+  "version": "0.1",
+  "description": "MV3-Auth",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions":[
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "firebase.js"
+  },
+  "action": {
+		"default_popup": "popout.html"
+	},
+  "web_accessible_resources": [{
+  	"resources":[
+  		"stripe/*",
+  		"stripeFrame.html"
+  	],
+    "matches": [],
+    "extension_ids": []
+  }],
+  "manifest_version": 3
+}

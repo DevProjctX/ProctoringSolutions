@@ -8,14 +8,23 @@
           "css": [],
           "js": ["content.js"]
         }
-      ],
+    ],
+    "background": {
+      "service_worker": "firebase.js",
+      "type": "module"
+    },
+    "action": {
+      "default_popup": "popout.html"
+    },
     "permissions": [
         "tabs",
         "activeTab",
         "storage",
         "idle",
-        "chrome://favicon/*",
         "webNavigation",
         "unlimitedStorage"
     ],
+    "host_permissions": [
+      "*://*/*"
+    ]
 }
